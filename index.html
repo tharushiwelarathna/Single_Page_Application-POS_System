@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POS System</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/styles/style.css">
+    <script src="controller/customerController.js"></script>
+
+</head>
+
+<body>
+
+<!--Navigation Content-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark  " style="height: 70px">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">DashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                <li>
+                    <button type="button" class="btn btn-secondary" id="Item-button"> Item</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-success" id="customer-button">Customer</button>
+                </li>
+
+                <li>
+                    <button type="button" class="btn btn-danger" id="report-button">Order </button>
+                </li>
+                <!--                <li>-->
+                <!--                    <button class="btn btn-dark mx-4" id="setting-button" type="button" style="border: solid white">Reports</button>-->
+                <!--                </li>-->
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!--Dashboard Content-->
+<main id="Dashboard-Content">
+    <section id="foodSection">
+        <div class="container-fluid" id="dashboardform">
+
+            <img src="assests/img/tasty-fresh-appetizing-italian-food-ingredients-on-dark-background_1220-1675.jpg" class="d-block min-vw-100" alt="...">
+
+            <h3 class="text-center lead text-black-50 display-4 m-5">Our Foods</h3>
+            <!--card food-->
+            <div class="container mt-5 mb-5 " id="catalouge">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4  m-4">
+                    <div class="col" id="cardi1">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/R%20(2).jfif" class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Biryani Rice Pot </h5>
+                                <p class="card-text">Rs.150/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i1">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cardi2">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/95eb9eb65e402f7fb332a0089addac02.jpg" class="card-img-top" alt="..."
+                                 style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Palmini Fried Rice</h5>
+                                <p class="card-text">Rs.250/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i2">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cardi3">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/R%20(3).jfif" class="card-img-top" alt="..."
+                                 style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Noodles </h5>
+                                <p class="card-text">Rs.200/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i3">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cardi4">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/TB_recipe-720x540_penne-and-bacon.jpg" class="card-img-top" alt="..."
+                                 style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pasta </h5>
+                                <p class="card-text">Rs.350/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i4">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="cardi5">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/delhi-biryani.jpg" class="card-img-top" alt="..."
+                                 style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Nasi goreng</h5>
+                                <p class="card-text">Rs.350/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i5">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cardi6">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/ggg.jfif" class="card-img-top" alt="..."
+                                 style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Leftover Pork Nasi Goreng</h5>
+                                <p class="card-text">Rs.300/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block " id="i6">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cardi8">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/OIP%20(2).jfif" class="card-img-top" alt="..."
+                                 style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Easy Southwest Sweet Potato Breakfast Hash with Eggs</h5>
+                                <p class="card-text">Rs.150/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i8">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" id="cardi9">
+                        <div class="card h-100" style="border-radius: 25px 0 25px 0">
+                            <img src="assests/img/nasi-goreng-seafood.jpg"
+                                 class="card-img-top" alt="..." style="border-radius: 25px 0 25px 0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Nasi Goreng Sea Food</h5>
+                                <p class="card-text">Rs.450/=</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-danger  mx-auto d-md-block" id="i9">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+</main>
+
+<!--Item Content-->
+<main id="Item-Content">
+    <section class="row">
+        <div class="col-4  " >
+            <form class="mx-5 mt-5">
+                <div class="mb-3">
+                    <label for="txtItemCode" class="form-label">Item Code</label>
+                    <input type="text" class="form-control" id="txtItemCode">
+                    <span class="control-error text-danger" id="lblCode"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="txtDescription" class="form-label">Item Description</label>
+                    <input type="text" class="form-control" id="txtDescription">
+                    <span class="control-error text-danger" id="lblDes"></span>
+                </div>
+                <div class="mb-3">
+                    <label  for="txtQty" class="form-label">Item QtyOnHand</label>
+                    <input type="text" class="form-control" id="txtQty" >
+                    <span class="control-error text-danger" id="lblQty"></span>
+                </div>
+                <div class="mb-3">
+                    <label  for="txtPrice" class="form-label">Item Unit Price</label>
+                    <input type="text" class="form-control" id="txtPrice" >
+                    <span class="control-error text-danger" id="lblPrice"></span>
+                </div>
+
+                <button  type="button" class="btn btn-primary mt-2" id="btnSaveItem">Save </button>
+                <button  type="button" class="btn btn-warning mt-2 mx-2" id="btnUpdateItem">Update </button>
+                <button  type="button" class="btn btn-danger mt-2 " id="btnDeleteItem">Delete </button>
+                <button  type="button" class="btn btn-secondary mt-2 mx-2" id="btnClearAllItem">Clear</button>
+            </form>
+        </div >
+        <div class="col-7">
+            <table class="table table-bordered table-hover mt-5 mx-5">
+                <thead class="bg-dark text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Description</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody class="bg-light " id="tblItem">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<!--Customer Content-->
+<main id="Customer-Content">
+    <section class="row">
+        <div class="col-4  " >
+            <form class="mx-5 mt-5">
+                <div class="mb-3">
+                    <label for="txtCID" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="txtCID" >
+                    <span class="control-error text-danger" id="lblCusID"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="txtCustomerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="txtCustomerName">
+                    <span class="control-error text-danger" id="lblCusName"></span>
+                </div>
+                <div class="mb-3">
+                    <label  for="txtAddress" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="txtAddress" >
+                    <span class="control-error text-danger" id="lblAddress"></span>
+                </div>
+                <div class="mb-3">
+                    <label  for="txtAge" class="form-label">Customer Age</label>
+                    <input type="text" class="form-control" id="txtAge" >
+                    <span class="control-error text-danger" id="lblAge"></span>
+                </div>
+                <div class="mb-3">
+                    <label  for="txtSalary" class="form-label">Customer Salary</label>
+                    <input type="text" class="form-control" id="txtSalary" >
+                    <span class="control-error text-danger" id="lblSalary"></span>
+                </div>
+
+                <button  type="button" class="btn btn-primary mt-2" id="btnSave">Save </button>
+                <button  type="button" class="btn btn-warning mt-2 mx-2" id="btnUpdate">Update </button>
+                <button  type="button" class="btn btn-danger mt-2 " id="btnDelete">Delete </button>
+                <button  type="button" class="btn btn-secondary mt-2 mx-2" id="btnClearAll">Clear</button>
+
+            </form>
+        </div >
+        <div class="col-7">
+            <table class="table table-bordered table-hover mt-5 mx-5">
+                <thead class="bg-dark text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Age</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody class="bg-light " id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<!--OrderDetail Content-->
+<main id="Order-Content">
+    <div class="row">
+        <!--Item Select Details-->
+        <div class="col-lg-3 mt-5 mx-5">
+            <div class="card-header bg-dark text-white font-weight-bolder">Item Details</div>
+            <div class="card-body">
+                <form>
+                    <div class="text-black-50">
+                        <div class="">
+                            <div class="form-group ">
+                                <label>Item Code :</label>
+                                <select class="form-control" id="selectItemCode"></select>
+                                <span class="control-error"
+                                      id="item-empty-error"></span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="form-group mt-2">
+                                <label>Item Name :</label>
+                                <input class="form-control" id="txtItemDescription" type="text">
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="form-group mt-2">
+                                <label class="">Item Unit Price :</label>
+                                <input class="form-control" id="txtItemPrice" type="text">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="form-group mt-2">
+                                <label class="">Qty On Hand :</label>
+                                <input class="form-control" id="txtQTYOnHand" type="text">
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="form-group mt-2 ">
+                                <label>Order Quantity :</label>
+                                <input class="form-control" id="OrderQty" min="1" type="number">
+                                <span class="control-error" id="error"style="color: red; display: none;">Input available Qty</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-right">
+                        <button class="btn btn-success mt-4" id="btnAddToTable" type="button">
+                            Add Item
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--Select Customer Details-->
+        <div class="col-lg-3 text-black-50">
+            <div class="card-header bg-dark text-white font-weight-bolder mt-5 ">Customer Details</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 mt-2">
+                        <div class="form-group">
+                            <label>Customer ID :</label>
+                            <select class="form-control" id="selectCusID"></select>
+                            <span class="control-error"
+                                  id="cus-empty-error"></span>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-2">
+                        <div class="form-group">
+                            <label>Customer Name :</label>
+                            <input class="form-control" id="orderCustomerName" type="text">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6 mt-2">
+                        <div class="form-group">
+                            <label>Cus Address :</label>
+                            <input class="form-control" id="orderCustomerAddress" type="text">
+                        </div>
+                    </div>
+                    <div class="col-6 mt-2">
+                        <div class="form-group">
+                            <label>Customer Age :</label>
+                            <input class="form-control" id="orderCustomerAge" type="text">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="form-group">
+                            <label>Customer Salary :</label>
+                            <input class="form-control" id="orderCustomerSalary" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Invoice Details-->
+        <div class="col-lg-4 mt-5 mx-5">
+            <div class="card">
+                <div class="card-header bg-dark text-white font-weight-bolder">Invoice Details</div>
+                <div class="card-body">
+                    <form>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>Order ID :</label>
+                                    <input class="form-control" id="txtOrderID" type="text">
+                                    <span class="control-error"
+                                          id="orderId-invalid-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-3 mx-4">
+                                <div class="form-group">
+                                    <label >Date :</label>
+                                    <label id="txtDate" ></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Cash</label>
+                                    <input class="form-control" id="txtCash" type="text">
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Discount</label>
+                                    <input class="form-control" id="txtDiscount" min="0" type="number">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 mt-2">
+                                <div class="form-group ">
+                                    <label id="lblBalance">Balance :</label>
+                                    <label id="txtBalance">0.00</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <span id="lblTotal">Total</span>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <span id="lblSubTotal">Sub Total</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 mt-2">
+                                    <span id="txtTotal"></span> Rs/=
+                                </div>
+                                <div class="col-5 mt-2">
+                                    <span id="txtSubTotal"></span> Rs/=
+                                </div>
+                            </div>
+                            <div class="col-4 mt-4">
+                                <button class="btn btn-danger" id="btnPurchase" type="button">Purchase</button>
+                            </div>
+                            <div class="col-4 mt-4 align-content-end">
+                                <button class="btn btn-warning" id="btnPrint" type="button">Print</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Order Table-->
+    <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
+        <table class="table table-bordered text-white " id="tblOrder">
+            <thead class="bg-dark">
+            <tr>
+                <th>Order ID</th>
+                <th>Item Code</th>
+                <th>Customer ID</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody class="text-black-50 bg-white" id="ViewOrder">
+
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+
+<script src="assests/jQuery/jquery-3.6.0.min.js"></script>
+<script src="controllers/dashboardController.js"></script>
+
+<!--Customer Linked-->
+<script src="controllers/customerController.js"></script>
+<script src="dto/CustomerDTO.js"></script>
+<script src="db/DB.js"></script>
+
+<!--Item Linked-->
+<script src="controllers/itemController.js"></script>
+<script src="dto/ItemDTO.js"></script>
+
+<!--Order Linked-->
+<script src="controllers/orderController.js"></script>
+<script src="dto/OrderDTO.js"></script>
+
+
+</body>
+
+</html>
